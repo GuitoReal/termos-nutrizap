@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Política de Privacidade — NutriZap</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --green: #2d6a4f;
+      --green-light: #52b788;
+      --green-pale: #d8f3dc;
+      --cream: #fafaf7;
+      --dark: #1a1a1a;
+      --gray: #555;
+      --border: #e0e8e2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.8;
+    }
+
+    header {
+      background: var(--green);
+      padding: 48px 24px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #fff;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .logo span { color: var(--green-light); }
+
+    header p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--green-pale);
+      color: var(--green);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 32px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      background: white;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--green-light);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--green);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      width: 28px; height: 28px;
+      background: var(--green-pale);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: var(--gray);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 0.95rem;
+      color: var(--gray);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: var(--green-light);
+      font-size: 0.6rem;
+      top: 10px;
+    }
+
+    .contact-box {
+      background: var(--green);
+      border-radius: 16px;
+      padding: 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .contact-box h3 {
+      font-family: 'Playfair Display', serif;
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-box p {
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 16px;
+      font-size: 0.9rem;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      background: var(--green-light);
+      color: white;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .contact-box a:hover { opacity: 0.85; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #aaa;
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Nutri<span>Zap</span></div>
+  <p>Assistente de nutrição no WhatsApp</p>
+</header>
+
+<div class="container">
+
+  <div class="badge">Privacidade & Dados</div>
+
+  <div class="intro">
+    Esta Política de Privacidade descreve como o <strong>NutriZap</strong> coleta, usa e protege as informações dos usuários que interagem com nosso assistente de nutrição via WhatsApp. Ao utilizar o NutriZap, você concorda com os termos desta política.
+  </div>
+
+  <section>
+    <h2><span class="icon">📋</span> Informações que Coletamos</h2>
+    <p>Para personalizar sua experiência nutricional, coletamos as seguintes informações fornecidas voluntariamente por você durante o uso do serviço:</p>
+    <ul>
+      <li>Nome fornecido durante o cadastro</li>
+      <li>Objetivo nutricional (emagrecer, ganhar massa, manter peso)</li>
+      <li>Peso e altura informados</li>
+      <li>Restrições alimentares declaradas</li>
+      <li>Nível de atividade física</li>
+      <li>Preferências de hidratação</li>
+      <li>Fotos de refeições e áudios enviados para análise</li>
+      <li>Número de telefone (fornecido automaticamente pelo WhatsApp)</li>
+      <li>Histórico de conversas para contextualização das respostas</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🎯</span> Como Usamos suas Informações</h2>
+    <p>As informações coletadas são utilizadas exclusivamente para:</p>
+    <ul>
+      <li>Personalizar as análises nutricionais de acordo com seu perfil</li>
+      <li>Enviar notificações e lembretes no horário correto</li>
+      <li>Calcular metas de hidratação baseadas no seu peso</li>
+      <li>Adaptar sugestões de refeições às suas restrições alimentares</li>
+      <li>Melhorar a qualidade das respostas com base no histórico da conversa</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔒</span> Compartilhamento de Dados</h2>
+    <p>O NutriZap <strong>não vende, aluga ou compartilha</strong> seus dados pessoais com terceiros para fins comerciais.</p>
+    <p>Seus dados podem ser processados pelos seguintes serviços para o funcionamento do app:</p>
+    <ul>
+      <li><strong>Meta (WhatsApp Business API)</strong> — para envio e recebimento de mensagens</li>
+      <li><strong>Google Gemini AI</strong> — para análise de fotos, áudios e respostas nutricionais</li>
+      <li><strong>Railway</strong> — infraestrutura de hospedagem do servidor</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">🗄️</span> Armazenamento e Segurança</h2>
+    <p>Seus dados são armazenados em servidores seguros. Tomamos medidas técnicas para proteger suas informações contra acesso não autorizado, alteração ou divulgação.</p>
+    <p>Fotos e áudios enviados são processados em tempo real e não ficam armazenados permanentemente em nossos servidores após a análise.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">⏱️</span> Retenção de Dados</h2>
+    <p>Seus dados de perfil e histórico de conversas são mantidos enquanto você for um usuário ativo do NutriZap. Você pode solicitar a exclusão dos seus dados a qualquer momento.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">✅</span> Seus Direitos</h2>
+    <p>Você tem direito a:</p>
+    <ul>
+      <li>Acessar os dados que temos sobre você</li>
+      <li>Solicitar a correção de dados incorretos</li>
+      <li>Solicitar a exclusão dos seus dados</li>
+      <li>Revogar o consentimento de uso a qualquer momento</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">👶</span> Menores de Idade</h2>
+    <p>O NutriZap não é direcionado a menores de 13 anos. Não coletamos intencionalmente dados de crianças. Se você acredita que uma criança forneceu dados, entre em contato para que possamos removê-los.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔄</span> Alterações nesta Política</h2>
+    <p>Esta política pode ser atualizada periodicamente. Alterações significativas serão comunicadas através do próprio WhatsApp. A data da última atualização está indicada no rodapé desta página.</p>
+  </section>
+
+  <div class="contact-box">
+    <h3>Dúvidas sobre privacidade?</h3>
+    <p>Entre em contato conosco pelo WhatsApp ou e-mail</p>
+    <a href="mailto:contato@nutrizap.com.br">contato@nutrizap.com.br</a>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 NutriZap · Última atualização: março de 2025 · Todos os direitos reservados
+</footer>
+
+</body>
+</html>
